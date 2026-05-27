@@ -1,0 +1,11 @@
+# Banello Fresh Produce — robots.txt
+User-agent: *
+Allow: /
+Allow: /login
+
+# Keep admin path out of search engines
+# Note: Determined attackers can read this file.
+# Primary protection is the middleware JWT + IP check.
+Disallow: /api/
+
+Sitemap: https://banello.ug/sitemap.xml
