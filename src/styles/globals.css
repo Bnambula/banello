@@ -1,0 +1,31 @@
+:root {
+  --green:#1C3A28;--gm:#2D5A3D;--gl:#4A7A5A;--gp:#EAF3EE;
+  --yellow:#E8B84B;--yd:#D4A830;--yl:#FDF4DC;
+  --cream:#F8F4EE;--white:#fff;
+  --g50:#F9F9F9;--g100:#EEEEEE;--g200:#E0E0E0;--g400:#9E9E9E;--g600:#616161;--g900:#121212;
+  --font-display:'Playfair Display',Georgia,serif;
+  --font-body:'DM Sans',-apple-system,sans-serif;
+  --font-mono:'DM Mono','Courier New',monospace;
+  --r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:24px;
+  --shadow-xs:0 1px 3px rgba(0,0,0,0.06);
+  --shadow-sm:0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md:0 4px 16px rgba(0,0,0,0.10);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;height:100%}
+body{font-family:var(--font-body);font-size:14px;line-height:1.6;color:var(--g900);background:var(--cream);-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font-family:inherit}
+button{cursor:pointer}
+::selection{background:var(--yellow);color:var(--green)}
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-thumb{background:var(--g200);border-radius:4px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gl)!important;box-shadow:0 0 0 3px rgba(74,122,90,0.12)!important}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+.fade-in{animation:fadeUp .3s ease both}
+.slide-down{animation:slideDown .2s ease}
+@media(max-width:600px){.hide-mobile{display:none!important}}
+@media(min-width:601px){.hide-desktop{display:none!important}}
